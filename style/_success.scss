@@ -1,0 +1,14 @@
+#success {
+  min-height: 90vh;
+  width: 70%;
+  margin: auto;
+  @include flex(space-bewteen, center, row);
+
+  h2 {
+    color: $main-green;
+  }
+  p {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+}

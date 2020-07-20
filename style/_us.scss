@@ -1,0 +1,97 @@
+#us {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 4rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+  header {
+    min-height: 10vh;
+    @include flex(center, center, column);
+    h2 {
+      padding: 3rem 0rem;
+    }
+  }
+  .image-container {
+    align-items: flex-start;
+  }
+}
+.us-container {
+  flex-shrink: 0;
+  width: 80%;
+  flex-wrap: nowrap;
+  @include flex(center, center, row);
+  .image-container,
+  .text-container {
+    flex-shrink: 0;
+    flex: 1 1 10rem;
+    @include flex(center, center, column);
+    text-align: justify;
+    p {
+      padding: 2rem;
+      color: rgb(59, 59, 59);
+    }
+  }
+}
+/* ------------------------------- */
+#comprar {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 4rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+  header {
+    min-height: 10vh;
+    @include flex(center, center, column);
+    h2 {
+      padding: 3rem 0rem;
+    }
+  }
+}
+.buy-container {
+  flex-shrink: 0;
+  width: 80%;
+  flex-wrap: nowrap;
+  @include flex(center, center, row);
+  .image-container,
+  .text-container {
+    flex-shrink: 0;
+    flex: 1 1 10rem;
+    @include flex(center, center, column);
+    text-align: justify;
+    p {
+      padding: 2rem;
+      color: rgb(59, 59, 59);
+    }
+  }
+  .text-container {
+    order: 1;
+  }
+  .image-container {
+    order: 2;
+    align-items: flex-end;
+  }
+}
+/* ------------------------------- */
+#formas-pago {
+  height: 15rem;
+  @include flex(center, center, column);
+  background-color: $main-pink;
+  color: white;
+  text-align: center;
+  .text-container {
+    @include flex(center, center, column);
+    text-align: center;
+    height: 100%;
+    display: flex;
+    width: 90%;
+    margin: auto;
+  }
+}

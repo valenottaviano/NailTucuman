@@ -1,0 +1,218 @@
+$header1: 1.5rem;
+$header2: 4rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$text: 1.8rem;
+$main-pink: #ff6b6b;
+$main-green: #4ecdc4;
+$dark-blue: #292f36;
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@import "hero";
+@import "global";
+@import "modulos";
+@import "price";
+@import "form";
+@import "success";
+@import "us";
+
+/* MEDIA QUERIES */
+
+$breakpoint1: 1400px;
+@media (max-width: $breakpoint1) {
+  #curso {
+    text-align: center;
+  }
+  #hero {
+    text-align: center;
+  }
+  #modulos {
+    .shape1 {
+      top: -5px;
+    }
+  }
+  .box-container {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+  }
+}
+$breakpoint4: 1150px;
+@media (max-width: $breakpoint4) {
+  .buy-container,
+  .image-container {
+    text-align: center;
+    width: 90%;
+  }
+  #hero {
+    .image-container {
+      align-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+$breakpoint2: 890px;
+@media (max-width: $breakpoint2) {
+  #logo {
+    margin: 4rem 0rem;
+    justify-content: center;
+  }
+  .nav-links {
+    margin-bottom: 2rem;
+    justify-content: space-around;
+    a {
+      font-size: 1.2rem;
+    }
+  }
+  .comprar-button-navlink {
+    padding: 1rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  #curso {
+    flex-direction: column;
+    justify-content: center;
+    button {
+      margin-bottom: 5rem;
+    }
+  }
+  .hero-text {
+    margin-bottom: 8rem;
+  }
+  .image-container {
+    img {
+      height: 20rem;
+    }
+  }
+  #hero {
+    flex-direction: column;
+    justify-content: center;
+    button {
+      margin-bottom: 5rem;
+    }
+    .hero-text {
+      margin-bottom: 8rem;
+    }
+    .image-container {
+      img {
+        height: 20rem;
+      }
+    }
+  }
+
+  #price {
+    flex-direction: column;
+    text-align: center;
+    .image-container {
+      order: 2;
+    }
+    .text-container {
+      align-items: center;
+      text-align: center;
+    }
+    h3 {
+      margin: 1rem 0rem;
+    }
+  }
+  #success {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    .image-container {
+      order: 2;
+      display: none;
+    }
+    .text-container {
+      order: 1;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+      margin: 3rem;
+    }
+  }
+  #us {
+    width: 100%;
+    display: block;
+    .us-container {
+      width: 100%;
+      flex-direction: column;
+      display: block;
+    }
+    .image-container {
+      align-items: center;
+      order: 2;
+      display: flex;
+      margin: auto;
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+  #comprar {
+    display: block;
+    width: 100%;
+    .image-container {
+      align-items: center;
+      display: flex;
+      margin: auto;
+    }
+    .buy-container {
+      width: 100%;
+      flex-direction: column;
+      display: block;
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+  #newsletter {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .contact {
+      align-items: center;
+      margin-right: 0px;
+    }
+  }
+}
+
+$breakpoint3: 450px;
+@media (max-width: $breakpoint3) {
+  h2 {
+    font-size: 2.5rem;
+  }
+  #hero {
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .productos-button {
+      margin: 10px 0px 0px 0px;
+    }
+    .vermas-button {
+      margin: 30px 0px;
+    }
+  }
+  #newsletter {
+    button {
+      margin-bottom: 50px;
+    }
+    h3 {
+      margin: 4rem 0rem;
+    }
+  }
+}

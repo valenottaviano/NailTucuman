@@ -1,0 +1,59 @@
+/* Global Styles */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  animation-name: opening;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+h1 {
+  font-size: $header1;
+  color: black;
+}
+li,
+button,
+label,
+input,
+a,
+p {
+  font-weight: 400;
+  font-size: $text;
+}
+h2 {
+  font-size: $header2;
+  color: $dark-blue;
+}
+h3 {
+  font-size: $header3;
+  font-weight: 400;
+}
+h4 {
+  font-size: $header4;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+button {
+  padding: 1rem 3.5rem;
+  background: $main-pink;
+  border: 2px solid $main-pink;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  &hover {
+    border-color: transparent;
+  }
+}

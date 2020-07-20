@@ -1,0 +1,114 @@
+/* HEADER SECTION */
+.main-head {
+  width: 90%;
+  margin: auto;
+  min-height: 10vh;
+  @include flex(space-between, center, row);
+}
+nav {
+  @include flex(space-between, center, row);
+  flex: 1 1 40rem;
+  flex-wrap: wrap;
+}
+.comprar-button-navlink {
+  padding: 1rem 3.5rem;
+  color: white;
+  border-radius: 20px;
+}
+.aa {
+  background-color: $main-pink;
+  border-color: $main-pink;
+}
+.ab {
+  background-color: $main-green;
+  border-color: $main-green;
+}
+#logo {
+  @include flex(flex-start, center, row);
+  flex: 1 1 40rem;
+  img {
+    padding-right: 2rem;
+    height: 40px;
+    margin-bottom: 1rem;
+  }
+}
+.nav-links {
+  @include flex(space-between, center, row);
+  flex: 3 1 40rem;
+}
+
+/* HERO SECTION */
+#curso {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  @include flex(space-between, center, row);
+  flex-wrap: wrap;
+}
+.hero-text {
+  h2 {
+    color: $dark-blue;
+  }
+  h3 {
+    color: rgb(109, 109, 109);
+    padding: 2rem 0rem;
+  }
+}
+.image-container {
+  @include flex(flex-end, center, row);
+  img {
+    height: 30rem;
+  }
+}
+.vermas-button {
+  background: transparent;
+  color: $main-pink;
+  margin-left: 2rem;
+  margin-top: 3rem;
+}
+
+/* HERO SECTION */
+#hero {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  @include flex(space-between, center, row);
+  flex-wrap: wrap;
+  .productos-button {
+    background-color: $main-green;
+    color: white;
+    border-color: $main-green;
+  }
+  .vermas-button {
+    background: transparent;
+    color: $main-green;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    button {
+      border: 2px solid $main-green;
+    }
+  }
+}
+
+.hero-text {
+  h2 {
+    color: $dark-blue;
+  }
+  h3 {
+    color: rgb(109, 109, 109);
+    padding: 2rem 0rem;
+  }
+}
+.image-container {
+  @include flex(flex-end, center, row);
+  img {
+    height: 30rem;
+  }
+}
+
+.nav-links-curso {
+  justify-content: flex-end;
+  li {
+    padding-left: 2rem;
+  }
+}

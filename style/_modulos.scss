@@ -1,0 +1,43 @@
+#modulos {
+  min-height: 110vh;
+  background: $main-green;
+  position: relative;
+  @include flex(center, center, column);
+  overflow: hidden;
+  .shape1 {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    -webkit-user-drag: none;
+  }
+  .shape2 {
+    width: 100%;
+    position: absolute;
+    bottom: -2px;
+    -webkit-user-drag: none;
+  }
+}
+.box-container {
+  display: inline-block;
+  width: 90%;
+  margin: auto;
+  @include flex(center, center, row);
+  flex-wrap: wrap;
+  .box {
+    @include flex(center, center, column);
+    text-align: justify;
+    background: white;
+    min-height: 30rem;
+    margin: 1rem;
+    border-radius: 20px;
+    padding: 4rem 2rem;
+    flex: 1 1 40rem;
+    h2 {
+      margin: 2rem 0rem;
+      font-size: 3rem;
+    }
+    p {
+      margin: 3rem 2rem;
+    }
+  }
+}
