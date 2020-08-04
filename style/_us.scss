@@ -95,3 +95,12 @@
     margin: auto;
   }
 }
+footer {
+  height: 15rem;
+  @include flex(center, center, column);
+  background-color: $main-pink;
+  text-align: center;
+  h2 {
+    color: white;
+  }
+}

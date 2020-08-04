@@ -18,6 +18,31 @@
           flex-direction: row;
 }
 
+.button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.button-container button {
+  margin: 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,9 +65,9 @@ nav {
 }
 
 .comprar-button-navlink {
-  padding: 1rem 3.5rem;
   color: white;
   border-radius: 20px;
+  padding: 1rem 2rem;
 }
 
 .aa {
@@ -121,6 +146,10 @@ nav {
       flex-wrap: wrap;
 }
 
+.hero-text {
+  text-align: center;
+}
+
 .hero-text h2 {
   color: #292f36;
 }
@@ -153,8 +182,6 @@ nav {
 .vermas-button {
   background: transparent;
   color: #ff6b6b;
-  margin-left: 2rem;
-  margin-top: 3rem;
 }
 
 /* HERO SECTION */
@@ -188,8 +215,6 @@ nav {
 #hero .vermas-button {
   background: transparent;
   color: #4ecdc4;
-  margin-left: 2rem;
-  margin-top: 3rem;
 }
 
 #hero .vermas-button button {
@@ -233,6 +258,26 @@ nav {
 
 .nav-links-curso li {
   padding-left: 2rem;
+}
+
+.bubble-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.bubble-img {
+  height: 80px;
+  width: 80px;
 }
 
 /* Global Styles */
@@ -828,6 +873,29 @@ input:focus {
   margin: auto;
 }
 
+footer {
+  height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ff6b6b;
+  text-align: center;
+}
+
+footer h2 {
+  color: white;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 1400px) {
   #curso {
@@ -915,15 +983,20 @@ input:focus {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 100%;
   }
   #hero button {
     margin-bottom: 5rem;
   }
   #hero .hero-text {
     margin-bottom: 8rem;
+    width: 100%;
   }
   #hero .image-container img {
     height: 20rem;
+  }
+  .button-container {
+    width: 100%;
   }
   #price {
     -webkit-box-orient: vertical;
@@ -1047,32 +1120,18 @@ input:focus {
             align-items: center;
     margin-right: 0px;
   }
+  .bubble-img {
+    height: 60px;
+    width: 60px;
+  }
 }
 
 @media (max-width: 450px) {
   h2 {
     font-size: 2.5rem;
   }
-  #hero .button-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #hero .productos-button {
-    margin: 10px 0px 0px 0px;
-  }
-  #hero .vermas-button {
-    margin: 30px 0px;
+  #hero button {
+    margin: 1rem 1rem;
   }
   #newsletter button {
     margin-bottom: 50px;

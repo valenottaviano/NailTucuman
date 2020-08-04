@@ -98,17 +98,22 @@ $breakpoint2: 890px;
   #hero {
     flex-direction: column;
     justify-content: center;
+    width: 100%;
     button {
       margin-bottom: 5rem;
     }
     .hero-text {
       margin-bottom: 8rem;
+      width: 100%;
     }
     .image-container {
       img {
         height: 20rem;
       }
     }
+  }
+  .button-container {
+    width: 100%;
   }
 
   #price {
@@ -186,6 +191,10 @@ $breakpoint2: 890px;
       margin-right: 0px;
     }
   }
+  .bubble-img {
+    height: 60px;
+    width: 60px;
+  }
 }
 
 $breakpoint3: 450px;
@@ -194,17 +203,8 @@ $breakpoint3: 450px;
     font-size: 2.5rem;
   }
   #hero {
-    .button-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .productos-button {
-      margin: 10px 0px 0px 0px;
-    }
-    .vermas-button {
-      margin: 30px 0px;
+    button {
+      margin: 1rem 1rem;
     }
   }
   #newsletter {

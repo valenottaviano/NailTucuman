@@ -5,15 +5,23 @@
   min-height: 10vh;
   @include flex(space-between, center, row);
 }
+.button-container {
+  @include flex(center, center, row);
+  flex-wrap: wrap;
+  button {
+    margin: 2rem;
+    flex: 1 1 20rem;
+  }
+}
 nav {
   @include flex(space-between, center, row);
   flex: 1 1 40rem;
   flex-wrap: wrap;
 }
 .comprar-button-navlink {
-  padding: 1rem 3.5rem;
   color: white;
   border-radius: 20px;
+  padding: 1rem 2rem;
 }
 .aa {
   background-color: $main-pink;
@@ -46,6 +54,7 @@ nav {
   flex-wrap: wrap;
 }
 .hero-text {
+  text-align: center;
   h2 {
     color: $dark-blue;
   }
@@ -63,8 +72,6 @@ nav {
 .vermas-button {
   background: transparent;
   color: $main-pink;
-  margin-left: 2rem;
-  margin-top: 3rem;
 }
 
 /* HERO SECTION */
@@ -82,8 +89,7 @@ nav {
   .vermas-button {
     background: transparent;
     color: $main-green;
-    margin-left: 2rem;
-    margin-top: 3rem;
+
     button {
       border: 2px solid $main-green;
     }
@@ -111,4 +117,19 @@ nav {
   li {
     padding-left: 2rem;
   }
+}
+
+// WHATSAPP BUBBLE
+
+.bubble-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+.bubble-img {
+  height: 80px;
+  width: 80px;
 }
