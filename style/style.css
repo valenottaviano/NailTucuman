@@ -1077,6 +1077,10 @@ footer h2 {
   #us p {
     margin-bottom: 2rem;
   }
+  #us img {
+    width: 100%;
+    height: 100%;
+  }
   #comprar {
     display: block;
     width: 100%;
@@ -1085,6 +1089,9 @@ footer h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1100,6 +1107,10 @@ footer h2 {
   }
   #comprar p {
     margin-bottom: 2rem;
+  }
+  #comprar img {
+    width: 100%;
+    height: 100%;
   }
   #newsletter {
     -webkit-box-orient: vertical;
