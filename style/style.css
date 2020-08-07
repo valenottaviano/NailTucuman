@@ -422,7 +422,7 @@ buttonhover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: justify;
+  text-align: center;
   background: white;
   min-height: 30rem;
   margin: 1rem;

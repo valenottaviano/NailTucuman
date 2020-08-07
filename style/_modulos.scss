@@ -25,7 +25,7 @@
   flex-wrap: wrap;
   .box {
     @include flex(center, center, column);
-    text-align: justify;
+    text-align: center;
     background: white;
     min-height: 30rem;
     margin: 1rem;
