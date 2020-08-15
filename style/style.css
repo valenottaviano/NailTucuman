@@ -969,6 +969,24 @@ footer h2 {
   color: white;
 }
 
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #9b3164;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.burger {
+  display: none;
+}
+
+.nav-links.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 1400px) {
   #curso {
@@ -1008,10 +1026,13 @@ footer h2 {
 
 @media (max-width: 890px) {
   #logo {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     margin: 4rem 0rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .nav-links {
     margin-bottom: 2rem;
@@ -1217,6 +1238,30 @@ footer h2 {
   #curso-submitting {
     width: 90%;
     margin: auto;
+  }
+  .burger {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 12rem;
+    left: 0;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #9b3164;
+  }
+  .nav-links li {
+    margin: 3rem;
+  }
+  .nav-links a {
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+    background-color: transparent;
   }
 }
 

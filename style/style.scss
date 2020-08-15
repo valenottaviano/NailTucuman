@@ -21,6 +21,7 @@ $dark-blue: #242424;
 @import "form";
 @import "success";
 @import "us";
+@import "burger-menu";
 
 /* MEDIA QUERIES */
 
@@ -61,8 +62,9 @@ $breakpoint4: 1150px;
 $breakpoint2: 890px;
 @media (max-width: $breakpoint2) {
   #logo {
+    flex: 1;
     margin: 4rem 0rem;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .nav-links {
     margin-bottom: 2rem;
@@ -217,7 +219,31 @@ $breakpoint2: 890px;
     width: 90%;
     margin: auto;
   }
+  // BURGER MENU MEDIA QUERIES
+
+  .burger {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 12rem;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: $main-green;
+    li {
+      margin: 3rem;
+    }
+    a {
+      font-weight: 600;
+      font-size: 2rem;
+      color: rgb(255, 255, 255);
+      background-color: transparent;
+    }
+  }
 }
+// MOBILE TESTING
 
 $breakpoint3: 450px;
 @media (max-width: $breakpoint3) {

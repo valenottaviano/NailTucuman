@@ -1,0 +1,13 @@
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: $main-green;
+  margin: 5px;
+  border-radius: 10px;
+}
+.burger {
+  display: none;
+}
+.nav-links.active {
+  display: flex;
+}
