@@ -26,6 +26,9 @@ navLink.forEach((e) => {
         link.style.animation = "";
       });
       navLinks.classList.remove("active");
+      lines.forEach((line) => {
+        line.classList.remove("toggle");
+      });
     }
   });
 });
