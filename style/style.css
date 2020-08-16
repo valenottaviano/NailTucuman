@@ -293,6 +293,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
   -webkit-animation-name: opening;
           animation-name: opening;
@@ -981,10 +982,31 @@ footer h2 {
   display: none;
 }
 
+.burger div {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .nav-links.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.toggle.line1 {
+  -webkit-transform: translateY(8px) rotate(45deg);
+          transform: translateY(8px) rotate(45deg);
+}
+
+.toggle.line2 {
+  opacity: 0;
+}
+
+.toggle.line3 {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+          transform: translateY(-8px) rotate(-45deg);
 }
 
 /* MEDIA QUERIES */
@@ -1243,19 +1265,28 @@ footer h2 {
     display: block;
   }
   .nav-links {
-    display: none;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
     position: absolute;
-    top: 12rem;
+    top: 10rem;
     left: 0;
     width: 100%;
+    height: 90vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: #9b3164;
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: -webkit-transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
   }
   .nav-links li {
     margin: 3rem;
+    -webkit-transform: translateX(10rem);
+            transform: translateX(10rem);
+    opacity: 0;
   }
   .nav-links a {
     font-weight: 600;
@@ -1277,6 +1308,32 @@ footer h2 {
   }
   #newsletter h3 {
     margin: 4rem 0rem;
+  }
+}
+
+@-webkit-keyframes linksFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(10rem);
+            transform: translateX(10rem);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes linksFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(10rem);
+            transform: translateX(10rem);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 /*# sourceMappingURL=style.css.map */

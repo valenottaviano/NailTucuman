@@ -7,7 +7,20 @@
 }
 .burger {
   display: none;
+  div {
+    transition: all 0.3s ease;
+  }
 }
 .nav-links.active {
   display: flex;
+  transform: translateX(0%);
+}
+.toggle.line1 {
+  transform: translateY(8px) rotate(45deg);
+}
+.toggle.line2 {
+  opacity: 0;
+}
+.toggle.line3 {
+  transform: translateY(-8px) rotate(-45deg);
 }
