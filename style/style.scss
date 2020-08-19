@@ -234,6 +234,8 @@ $breakpoint2: 890px;
     flex-direction: column;
     background-color: $main-green;
     transition: transform 0.3s ease-in;
+    justify-content: center;
+
     li {
       margin: 3rem;
       transform: translateX(10rem);

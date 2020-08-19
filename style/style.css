@@ -1281,6 +1281,9 @@ footer h2 {
     transition: -webkit-transform 0.3s ease-in;
     transition: transform 0.3s ease-in;
     transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .nav-links li {
     margin: 3rem;

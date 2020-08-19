@@ -10,7 +10,7 @@ burger.addEventListener("click", () => {
       link.style.animation = "";
     } else {
       link.style.animation = `linksFade 0.3s ease-in forwards ${
-        index / 5 + 0.5
+        index / 7 + 0.5
       }s`;
     }
   });
