@@ -226,7 +226,7 @@ $breakpoint2: 890px;
   }
   .nav-links {
     transform: translateX(100%);
-    position: absolute;
+    position: fixed;
     top: 10rem;
     left: 0;
     width: 100%;

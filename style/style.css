@@ -1267,7 +1267,7 @@ footer h2 {
   .nav-links {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
-    position: absolute;
+    position: fixed;
     top: 10rem;
     left: 0;
     width: 100%;
