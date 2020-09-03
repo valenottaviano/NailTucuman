@@ -2,9 +2,11 @@ const burger = document.querySelector(".burger");
 const lines = document.querySelectorAll(".burger div");
 const navLinks = document.querySelector(".nav-links");
 const navLink = document.querySelectorAll(".nav-links li");
+const body = document.querySelector("body");
 
 burger.addEventListener("click", () => {
   navLinks.classList.toggle("active");
+  body.classList.toggle("scroll");
   navLink.forEach((link, index) => {
     if (link.style.animation) {
       link.style.animation = "";
@@ -26,6 +28,7 @@ navLink.forEach((e) => {
         link.style.animation = "";
       });
       navLinks.classList.remove("active");
+      body.classList.remove("scroll");
       lines.forEach((line) => {
         line.classList.remove("toggle");
       });

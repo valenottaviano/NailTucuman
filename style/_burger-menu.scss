@@ -12,6 +12,7 @@
   }
 }
 .nav-links.active {
+  overflow-y: hidden;
   display: flex;
   transform: translateX(0%);
 }
@@ -23,4 +24,8 @@
 }
 .toggle.line3 {
   transform: translateY(-8px) rotate(-45deg);
+}
+
+body.scroll {
+  overflow-y: hidden;
 }
